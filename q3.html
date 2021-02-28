@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Swap
+        </title>
+        <style>
+            .para
+            {
+                font-size:10px;
+            }
+            .p1
+            {
+                color:blue;
+            }
+            .p2
+            {
+                color:grey;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="p1 "> Hello Everyone</p>
+        <p class="p2"> Bye everyone</p>
+        <button onclick="swap()">Swap</button>
+    </body>
+    <script>
+        function swap()
+        {
+            p1=document.getElementsByClassName("p1");
+            p2=document.getElementsByClassName("p2");
+            t=p1[0].textContent;
+            p1[0].textContent=p2[0].textContent;
+            p2[0].textContent=t;
+        }
+    </script>
+</html>
