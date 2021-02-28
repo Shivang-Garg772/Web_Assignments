@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Get all links</title>
+</head><body>
+	<a href="https://www.javatpoint.com/random-image-generator-in-javascript"></a>
+		<button onclick="Getlink()">Get Links of web Page at console</button>
+</body>
+<script>
+	function Getlink(){
+temp=document.getElementById('a');
+for(i=0;i<temp.length;i++)
+{
+	console.log(temp[i].href);
+}}
+</script>
+</html>
